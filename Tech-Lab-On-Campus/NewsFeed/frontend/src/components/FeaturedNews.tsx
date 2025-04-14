@@ -18,11 +18,25 @@ function FeaturedNewsCard({ article }: NewsCardProps) {
 
     // Hint: Some classes included in `globals.css` may help with styling.
 
+    const title = article.title;
+    const image = article.image_url;
+    const text = article.body;
+
     return (
         <>
-            <span className='instruction'>Part 1: Show Featured News</span>
+            {/* <span className='instruction'>Part 1: Show Featured News</span> */}
+
             <div className="featured-news-card">
                 {/* TODO: Remove the span above and implement "FeaturedNewsCard" */}
+
+                <div className="featured-story-title">{title}</div>
+                <div className="featured-news-img-div">
+                    <div className="featured-news-img">
+                        <img src = {image}></img>
+                    </div>
+
+                </div>
+                <div className="featured-story-summary">{text}</div>
             </div>
         </>
     );
