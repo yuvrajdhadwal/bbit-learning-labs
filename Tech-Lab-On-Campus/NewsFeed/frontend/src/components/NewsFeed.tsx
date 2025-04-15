@@ -21,7 +21,6 @@ function NewsFeed({ articles }: NewsFeedProps ) {
                 {articles.map((article) => (
                     <NewsCard key={article.title} article={article}></NewsCard>
                 ))}
-                
             </div>
         </div>
     );
